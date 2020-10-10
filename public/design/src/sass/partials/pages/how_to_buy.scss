@@ -1,0 +1,100 @@
+@import '../vars.scss';
+
+.how_buy {
+    margin: $marginBtnSections 0;
+    .buy-box {
+        box-shadow: 2px 2px 10px #ddd;
+        margin: 50px 0;
+        padding: 20px 40px;
+        transition: 0.5s;
+        // &.jumia {
+        //     background-color: rgba(255, 143, 30, 0.3);
+        // }
+        // &.souq {
+        //     background-color: rgba(0, 139, 255, 0.3);
+        // }
+        // &.noon {
+        //     background-color: rgba(255, 237, 4, 0.3);
+        // }
+        // &.facebook {
+        //     background-color: rgba(66, 103, 178, 0.3);
+        // }
+        // &.office {
+        //     background-color: rgba(0, 169, 255, 0.3);
+        // }
+        &:hover {
+            transform: scale(1.04);
+        }
+        img {
+            width: 100%;
+            margin-top: 20%;
+            @media (min-width: 768px) and (max-width: 991px) {
+                margin-top: 30%;
+            }
+            @media (min-width: 576px) and (max-width: 767px) {
+                margin-top: 60%;
+            }
+            @media (max-width: 575px) {
+                margin-top: 0;
+            }
+        }
+        .text {
+            h5 {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            a {
+                width: 150px;
+                height: 40px;
+                display: inline-block;
+                line-height: 40px;
+                text-decoration: none;
+                color: #fff;
+                &.jumia {
+                    background-color: #ff8f1e;
+                }
+                &.souq {
+                    background-color: #008bff;
+                }
+                &.noon {
+                    background-color: #e6d604;
+                }
+                &.facebook {
+                    background-color: #4267b2;
+                }
+                &.office {
+                    background-color: #007bff;
+                }
+                i {
+                    //margin-left: 5px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover {
+                    &.jumia {
+                        background-color: #f1871c;
+                    }
+                    &.souq {
+                        background-color: #0178da;
+                    }
+                    &.noon {
+                        background-color: #d3c503;
+                    }
+                    &.facebook {
+                        background-color: #3a5a9b;
+                    }
+                    &.office {
+                        background-color: #016ee2;
+                    }
+                    
+                    i {
+                        margin-left: 15px;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

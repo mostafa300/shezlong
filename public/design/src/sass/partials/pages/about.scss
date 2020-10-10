@@ -1,0 +1,223 @@
+@import '../vars.scss';
+
+// start section who we are
+div.who-we {
+    padding: 50px 0;
+    .cont {
+        padding: 60px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+        @media (max-width :576px) {
+            padding: 15px;
+        }
+        h2.sec-title {
+            color: $mainColor;
+            letter-spacing: 2px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        p.sec-desc {
+            color: #888;
+        }
+        div.about-text {
+            color: #585858 ;
+            font-size: 20px;
+            @media (max-width :576px) {
+                font-size: 16px;
+            }
+        }
+        div.about-img {
+            width: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                transition: 0.7s;
+            }
+            &:hover img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// start section our services
+.services {
+    border-radius: 0 0 80px 80px;
+    background: linear-gradient( #fff, #007bff1f);
+    padding: 60px 0;
+    .section-title {
+        font-size: 42px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $mainColor;
+    }
+    .section-desc {
+        color: #888;
+        margin-bottom: 50px;
+    }
+    .service {
+        background-color: #fff;
+        padding: 40px;
+        margin-bottom: 30px;
+        border: 2px solid #fff; 
+        transition: all 0.3s ease-in;
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 25px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        i {
+            color: $mainColor;
+            font-size: 40px;
+            margin-right: 25px;
+        }
+        .service-title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .text {
+            color: #999;
+            line-height: 2;
+        }
+        &:hover {
+            border: 2px solid #007bff1f;
+            box-shadow: 2px 2px 20px #007bff1f, -2px -2px 20px #007bff1f;
+            //transform: scale(1.07)
+        }
+    }
+}
+
+// start section our services #2
+.services2 {
+    padding: 60px 0;
+    .section-title {
+        font-size: 42px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $mainColor;
+    }
+    .section-desc {
+        color: #888;
+        margin-bottom: 50px;
+    }
+    .service {
+        border: 2px solid #fff; 
+        margin-bottom: 30px;
+        @media (max-width: 576px) {
+            width: 90%;
+        }
+        .circle {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            margin: 30px auto;
+            border: 5px solid #fff;
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;;
+            }
+        }
+        h4 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p {
+            color: #777;
+            line-height: 2;
+        }
+        &:hover .circle {
+            box-shadow: 1px 1px 30px #eee, -1px -1px 30px #eee;
+        }
+        &:hover p {
+            color: #444
+        }
+    }
+}
+
+// start section vision and mission
+.vis-mis {
+    padding-bottom: 50px;
+    .img-t {
+        width: 100%;
+    }
+    hr {
+        border-top: 3px dotted rgb(207, 199, 199);
+        width: 86%;
+        margin-top: -15px;
+        margin: auto;
+    }
+    .vision, .mission {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 0 20px;
+        i {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: cursive;
+            color: $mainColor;
+        }
+        p {
+            color: #888;
+            line-height: 2;
+        }
+        &:hover, &:hover p {
+            cursor: default;
+        }
+    }
+    @media (max-width: 991px) {
+        text-align: center
+    }
+    @media (max-width :576px) {
+        width: 100%;
+    }
+}
+
+
+// start section CEO
+.ceo {
+    clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
+    background: linear-gradient( #007bff1f, #fff);
+    padding-top: 100px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        color: $mainColor;
+        font-weight: bold;
+        margin-bottom: 25px;
+        @media (max-width :576px) {
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        line-height: 2;
+        color: #585858;
+        @media (max-width :576px) {
+            font-size: 16px;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    a {
+        color: #fff;
+        background-color: $mainColor;
+        border-color: $mainColor;
+        transition: 0.4s;
+        @media (max-width :576px) {
+            margin-top: 20px;
+        }
+    }
+    @media (max-width :576px) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,120 @@
+@import '../partials/mixins';
+
+.main-footer {
+    margin-top: $marginBtnSections;
+    //background: $mainDark; 
+    //background: #1c4561; 
+    background: #061D3B; 
+    padding: 50px 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+   h5 {
+       color: #fff;
+       margin-bottom: 20px;
+       text-transform: capitalize;
+       cursor: default;
+   }
+   .footer-about-content {
+       margin-top: -13px;
+        .navbar-brand {
+            font-size: 19px;
+            color: #fff;
+            margin: 0;
+            .brand {
+                color: $mainColor;
+            }
+            .company-name {
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-left: 10px;
+                font-size: 22px;
+            }
+        }
+       .desc {
+           p {
+               color: #d4d4d4;
+               line-height: 1.8;
+               font-size: 13px;
+           }
+       }
+       .footer-about-btn {
+           span {
+               a {
+                   color: #d4d4d4 !important;
+                   transition: 0.3s;
+                   &:hover {
+                       color: $mainColor !important;
+                   }
+               }
+           }
+           @include btnHoverEffect;
+       }
+   }
+   .footer-sevices-content {
+        .list-group {
+            .list-group-item {
+                background: none;
+                border: none;
+                padding: 10px 0;
+                padding-top: 0;
+                a {
+                    //color: $mainColor;
+                    color: #d4d4d4;
+                    padding: 0;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        @include btnHoverEffect;
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+    }
+    .opening-hours-content {
+        font-size: 13px;
+        .list-group-item {
+            background: none;
+            color: #d4d4d4;
+            padding: 5px 0;
+            border-color: #8f8f8f;
+            width: 80%;
+        }
+    }
+   .contact-content {
+       .contact-info {
+           color: #d4d4d4;
+           i {
+                margin-right: 10px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background: $mainColor;
+                color: $mainWhite;
+                border-radius: 50%;
+                margin-bottom: 10px;
+           }
+       }
+   }
+}
+
+.copyrights {
+    padding: 30px;
+    //background: $mainDark;
+    //background: #1c4561;
+    background: #04152b;
+    color: $mainWhite;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .4);
+}
+
+@media ( max-width: 991px ) {
+    .main-footer {
+        .footer-about-content, .opening-hours-content {
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+doctype
+html
+    head
+        include ./partials/head
+    body
+        include ./partials/navbar 
+        include ./partials/internal-header-categories
+
+        // Products Section        
+        div(class="categories")
+            div(class="container")
+                div(class="search-products")
+                    form
+                        input(type="text" placeholder="Search products")
+                        button 
+                            img(src="assets/imgs/search.svg", alt="")
+
+                div(class="shuffle-btns-content")
+                    ul(class="nav nav-pills nav-fill shuffle")
+                        div(class="row")
+                            div.col-md-2
+                                li(class="selected filter nav-item text-uppercase" data-filter="all") All
+                            div.col-md-2 
+                                li(class="filter nav-item text-uppercase" data-filter=".chargers") CHARGERS
+                            div.col-md-2 
+                                li(class="filter nav-item text-uppercase" data-filter=".headphones") HEADPHONES
+                            div.col-md-2 
+                                li(class="filter nav-item text-uppercase" data-filter=".cables") CABLES
+                            div.col-md-2 
+                                li(class="filter nav-item text-uppercase" data-filter=".accessories") ACCESSORIES
+                            div.col-md-2 
+                                li(class="filter nav-item text-uppercase" data-filter=".chargers") ACCESSORIES
+
+                              
+                div(class="row" id="Container")
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix chargers")
+                        div(class="product-box")
+                            div(class="product-img")
+                                img(src="assets/imgs/category-4.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 Samsung u flex headphone
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href="/" data-toggle="modal" data-target=".bd-example-modal-lg" class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")   
+                                    div(class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true") 
+                                        div(class="modal-dialog modal-dialog-centered modal-lg")
+                                            div(class="modal-content")
+                                                div(class="modal-header")
+                                                    h5(class="modal-title") Belkin Lightning Audio&Charge for iPhone7
+                                                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                                                        i(class="fa fa-times")
+                                                div(class="modal-body")
+                                                    div(class="container")
+                                                        div(class="row")
+                                                            div(class="col-lg-6")
+                                                                div(class="product-img")
+                                                                    #carouselExampleControls.carousel.slide(data-ride='carousel')
+                                                                        .carousel-inner
+                                                                            .carousel-item.active
+                                                                                img.d-block.w-100(src='assets/imgs/category-1.jpg', alt='First slide')
+                                                                            .carousel-item
+                                                                                img.d-block.w-100(src='assets/imgs/category-2.jpg', alt='Second slide')
+                                                                            .carousel-item
+                                                                                img.d-block.w-100(src='assets/imgs/category-3.jpg', alt='Third slide')
+                                                                            .carousel-item
+                                                                                img.d-block.w-100(src='assets/imgs/category-4.jpg', alt='Third slide')
+                                                                            .carousel-item
+                                                                                img.d-block.w-100(src='assets/imgs/category-5.jpg', alt='Third slide')
+                                                                        a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+                                                                            span.carousel-control-prev-icon(aria-hidden='true')
+                                                                            span.sr-only Previous
+                                                                        a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+                                                                            span.carousel-control-next-icon(aria-hidden='true')
+                                                                            span.sr-only Next
+                                                            div(class="col-lg-6")
+                                                                div(class="product-info")
+                                                                    ul(class="list-group")
+                                                                        li(class="list-group-item d-flex justify-content-between align-items-center") Type 
+                                                                            span Charger
+                                                                        li(class="list-group-item d-flex justify-content-between align-items-center") Brand 
+                                                                            span
+                                                                                img(src="assets/imgs/samsung.png", alt="aaa")
+                                                                        li(class="list-group-item d-flex justify-content-between align-items-center") Colors 
+                                                                            span(class="color gold") Gold
+                                                                            span(class="color purple") Purple
+                                                                            span(class="color red") Red
+                                                                        li(class="list-group-item d-flex justify-content-between align-items-center") SKU 
+                                                                            span.sku BG950CB
+                                                            div(class="col-md-12")
+                                                                div(class="product-desc")
+                                                                        h6 Description
+                                                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix headphones")
+                        div(class="product-box")
+                            div(class="product-img")
+                                img(src="assets/imgs/1.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 Porodo 2Pin Dual USB
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href='products.html' class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix headphones")
+                        div(class="product-box")
+                            div(class="product-img")
+                                img(src="assets/imgs/category-2.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 Power box
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href='products.html' class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix cables")
+                        div(class="product-box hidden")
+                            div(class="product-img")
+                                img(src="assets/imgs/category-6.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 Audio box
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href='products.html' class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix accessories")
+                        div(class="product-box hidden")
+                            div(class="product-img")
+                                img(src="assets/imgs/category-1.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 accessories
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href='products.html' class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")
+                    div(class="col-lg-4 col-md-6 col-sm-12 mix cables")
+                        div(class="product-box hidden")
+                            div(class="product-img")
+                                img(src="assets/imgs/category-5.jpg" class="img-fluid" alt="product image")
+                            div(class="product-details-overlay")
+                                div(class="product-name")
+                                    h5 Audio box
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                div(class="product-details")
+                                    // Modal for details
+                                    div(class="product-details-btn")
+                                        span
+                                            a(href='products.html' class="text-uppercase") See Details
+                                            i(class="fa fa-long-arrow-right")
+                div(class="show-more")
+                    button(type="button" class="text-uppercase") Show more
+                        
+
+        // Footer Section
+
+        include ./partials/footer
+
+
+
+    script(src="src/js/vendors/jquery-3.2.1.js")
+    script(src="assets/js/main.js")
+    script(src="src/js/vendors/bootstrap.min.js")
+    script(src="src/js/vendors/popper.min.js")
+    script(src="src/js/vendors/jquery.min.js")
+    script(src="src/js/vendors/jquery.bxslider.min.js")
+    script(src="src/js/vendors/jquery.mixitup.js")
+
+    
+    
+        
+
+        
+        
+        

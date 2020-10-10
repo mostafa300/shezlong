@@ -1,0 +1,16 @@
+@import '../vars.scss';
+
+.b2b {
+    margin: $marginBtnSections 0;
+    .b2bBox {
+        margin-bottom: 50px;
+        h5 {
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-family: sans-serif;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

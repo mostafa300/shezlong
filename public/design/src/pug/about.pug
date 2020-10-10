@@ -1,0 +1,137 @@
+doctype
+html
+    head
+        include ./partials/head
+    body
+        include ./partials/navbar 
+        include ./partials/internal-header-about
+
+        // Products Section        
+
+        // start section who we are
+        div(class="who-we text-center")
+            div.container
+                div.cont
+                    h2.sec-title about us
+                    p.sec-desc who we are ?
+                    hr
+                    div.about-text
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since since the 1500s
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry industry industry industry industry industry industry. Lorem Ipsum has been the industry's standard dummy text ever since since the 1500s
+                        p Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in. Nulla aliquet bibendum sem, non placerat risus venenatis at. Prae sent vulputate bibendum dictum. Cras at vehicula urna. Suspendisse fringilla lobortis justo, ut tempor leo cursus in
+                    div.about-img
+                        img(class="rounded " src="assets/imgs/about-us.jpg")
+
+        
+        // start section our services
+        div(class="services")
+            div.container
+                h1(class="section-title text-center") Services
+                p(class="text-center section-desc") the best deals
+                div.row
+                    div(class="col-lg-4 col-md-6")
+                        div(class="service hvr-underline-from-center")
+                            div.row
+                                div.col-xs-2
+                                    div.icon
+                                        i(class="fa fa-check-circle")
+                                div.col-xs-9
+                                    p(class="service-title") Original 100%
+                            div.row
+                                div.col-xs-12
+                                    p.text Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+                    div(class="col-lg-4 col-md-6")
+                        div(class="service hvr-underline-from-center")
+                            div.row
+                                div.col-xs-2
+                                    i(class="fa fa-mobile")
+                                div.col-xs-9
+                                    p(class="service-title") Mobile shop
+                            div.row
+                                div.col-xs-12
+                                    p.text Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+                    div(class="col-lg-4 col-md-6 mx-md-auto")
+                        div(class="service hvr-underline-from-center")
+                            div.row
+                                div.col-xs-2
+                                    i(class="fa fa-mobile")
+                                div.col-xs-9
+                                    p(class="service-title") Mobile shop
+                            div.row
+                                div.col-xs-12
+                                    p.text Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+            
+
+        // start section our services #2
+        div(class="services2")
+            div.container
+                h1(class="section-title text-center") Services
+                p(class="text-center section-desc") the best deals
+                div.row
+                    div(class="col-lg-4 text-center col-md-6")
+                        div(class="service hvr-grow-shadow")
+                            div(class="circle")
+                                img(src="assets/imgs/category-1.jpg")
+                            h4 Original Items
+                            p Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+                    div(class="col-lg-4 text-center col-md-6")
+                        div(class="service hvr-grow-shadow")
+                            div(class="circle")
+                                img(src="assets/imgs/category-2.jpg")
+                            h4 Original Items
+                            p Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+                    div(class="col-lg-4 text-center col-md-6 mx-md-auto")
+                        div(class="service hvr-grow-shadow")
+                            div(class="circle")
+                                img(src="assets/imgs/category-3.jpg")
+                            h4 Original Items
+                            p Nulla aliquet bibendum sem, non placer risus venenatis at. Prae sent vulputate bibendum dictum.
+        
+        
+        // start section vision and mision
+        div(class="vis-mis")
+            div.container
+                div.row  
+                    div.col-sm-12 
+                        img(src="assets/imgs/vision-mission.jpg" class="img-t img-fluid" alt="vision and mission")
+                div.row
+                    div.col-lg-6
+                        div(class="hvr-underline-reveal vision")
+                            img(src="assets/imgs/rrr.png", alt="")
+                            h4 Company's Vision
+                            p looks forward and creates a mental image of the ideal state that the organization wishes to achieve. 
+                    div.col-lg-6
+                        div(class="hvr-underline-reveal mission")
+                            img(src="assets/imgs/ttt.png", alt="")
+                            h4 Company's mission
+                            p looks forward and creates a mental image of the ideal state that the organization wishes to achieve.
+
+
+
+
+       
+        // start section CEO
+        div.ceo 
+            div.container
+                div.row 
+                    div.col-md-5
+                        img(src="assets/imgs/happt-to-help.png", class="img-responsive")
+                    div.col-md-7
+                        h2 We Are Happy To Help You
+                        p(class="lead") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        a(href="contact.html" class="hvr-sweep-to-right btn btn-primary") Contact Us
+        
+
+                        
+
+        // Footer Section
+
+        include ./partials/footer
+
+
+
+    script(src="src/js/vendors/jquery-3.2.1.js")
+    script(src="assets/js/main.js")
+    script(src="src/js/vendors/bootstrap.min.js")
+    script(src="src/js/vendors/popper.min.js")
+    script(src="src/js/vendors/jquery.min.js")

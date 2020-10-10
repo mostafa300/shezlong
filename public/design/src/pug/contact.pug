@@ -1,0 +1,75 @@
+doctype
+html
+    head
+        include ./partials/head
+    body
+        include ./partials/navbar 
+        include ./partials/internal-header-contact
+
+        // Contact Section
+
+        div.mapSection
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.5887857313774!2d31.322283514441114!3d29.962504629395156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU3JzQ1LjAiTiAzMcKwMTknMjguMSJF!5e0!3m2!1sen!2seg!4v1560210508875!5m2!1sen!2seg" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+             
+        div.col-sm-12
+            div.formSection
+                div.container
+                    div.fc-box
+                        div.row
+                            div.col-lg-6
+                                div(class="formbox")
+                                    h3(class="mb-5 ml-lg-1 ") We want to hear from you!
+                                    form(action="#" method="post")
+                                        div.form-group
+                                            div.row
+                                                input(type="text" placeholder="Name" class="form-control ml-lg-4 col-lg-5 mb-4 py-3 ml-sm-1 col-sm-11" required)
+                                                input(type="email" placeholder="Email" class="form-control ml-lg-4 col-lg-5 mb-4 py-3 ml-sm-1 col-sm-11" required)
+                                                input(type="text" placeholder="Phone" class="form-control ml-lg-4 col-lg-5 mb-4 py-3 ml-sm-1 col-sm-11" required)
+                                                input(type="text" placeholder="Subject" class="form-control ml-lg-4 col-lg-5 mb-4 py-3 ml-sm-1 col-sm-11" required)
+                                                textarea( rows="6" placeholder="Enter your message here" class="form-control col-md-11 ml-lg-3 mb-4 py-3 ml-sm-1 col-sm-11" required)
+                                                input(class="submit btn btn-primary col-lg-4 ml-lg-3 py-2 ml-sm-1 col-sm-11" type="submit" value="SUBMIT")
+                            div.col-lg-6
+                                div(class="contact-infobox")
+                                    h3(class="font-weight-bold mb-5") Contact Information!
+                                    div(class="info")
+                                        div(class="det address")
+                                            i(class="fa fa-map-marker")
+                                            span 1377 kornish Elnil st. midelle area - agakan #[br] 3th floor #[br] Elsahel, Egypt
+                                        div(class="det phone")
+                                            i(class="fa fa-mobile")
+                                            span (877) 836-9530
+                                        div(class="det mail")
+                                            i(class="fa fa-envelope")
+                                            span info@altawheed.com.eg
+                                    div(class="social offset-lg-1")
+                                        a(href="#" class="hvr-float-shadow")
+                                            i(class="fa fa-facebook")
+                                        a(href="#" class="hvr-float-shadow")
+                                            i(class="fa fa-whatsapp")
+                                        a(href="#" class="hvr-float-shadow")
+                                            i(class="fa fa-twitter")
+                                        a(href="#" class="hvr-float-shadow")
+                                            i(class="fa fa-instagram")
+                                        a(href="#" class="hvr-float-shadow")
+                                            i(class="fa fa-linkedin")
+                        
+
+        // Footer Section
+
+        include ./partials/footer
+
+
+
+    script(src="src/js/vendors/jquery-3.2.1.js")
+    script(src="assets/js/main.js")
+    script(src="src/js/vendors/bootstrap.min.js")
+    script(src="src/js/vendors/popper.min.js")
+    script(src="src/js/vendors/jquery.min.js")
+
+    
+    
+        
+
+        
+        
+        

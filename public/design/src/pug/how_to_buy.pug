@@ -1,0 +1,78 @@
+doctype
+html
+    head
+        include ./partials/head
+    body
+        include ./partials/navbar 
+        include ./partials/internal-header-buy
+
+        // start section who we are
+        div(class="how_buy")
+            div(class="container")
+                h4(class="text-center font-weight-bold text-uppercase") you can buy our product from any this places.
+                div(class="buy-box jumia")
+                    div(class="row")
+                        div(class="col-lg-2 col-sm-3")
+                            img(src="assets/imgs/jumia.png", alt="")
+                        div(class="col-lg-10 col-sm-9")
+                            div(class="text")
+                                h5 Jumia Store
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                a(href="#" class="text-center jumia") go to buy
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                div(class="buy-box souq")
+                    div(class="row")
+                        div(class="col-lg-2 col-sm-3")
+                            img(src="assets/imgs/souq.png", alt="")
+                        div(class="col-lg-10 col-sm-9")
+                            div(class="text")
+                                h5 souq Store
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                a(href="#" class="text-center souq") go to buy
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                div(class="buy-box noon")
+                    div(class="row")
+                        div(class="col-lg-2 col-sm-3")
+                            img(src="assets/imgs/noon.png", alt="")
+                        div(class="col-lg-10 col-sm-9")
+                            div(class="text")
+                                h5 noon Store
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                a(href="#" class="text-center noon") go to buy
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                div(class="buy-box facebook")
+                    div(class="row")
+                        div(class="col-lg-2 col-sm-3")
+                            img(src="assets/imgs/facebook.png", alt="")
+                        div(class="col-lg-10 col-sm-9")
+                            div(class="text")
+                                h5 facebook page
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                a(href="#" class="text-center facebook") go to buy
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                div(class="buy-box office")
+                    div(class="row")
+                        div(class="col-lg-2 col-sm-3")
+                            img(src="assets/imgs/office.png", alt="")
+                        div(class="col-lg-10 col-sm-9")
+                            div(class="text")
+                                h5 main office 
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                a(href="#" class="text-center office") go to buy
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                
+
+
+                        
+
+        // Footer Section
+
+        include ./partials/footer
+
+
+
+    script(src="src/js/vendors/jquery-3.2.1.js")
+    script(src="assets/js/main.js")
+    script(src="src/js/vendors/bootstrap.min.js")
+    script(src="src/js/vendors/popper.min.js")
+    script(src="src/js/vendors/jquery.min.js")

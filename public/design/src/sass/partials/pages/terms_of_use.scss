@@ -1,0 +1,16 @@
+@import '../vars.scss';
+
+.terms-of-use {
+    margin: $marginBtnSections 0;
+    .termsBox {
+        margin-bottom: 50px;
+        h5 {
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-family: sans-serif;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

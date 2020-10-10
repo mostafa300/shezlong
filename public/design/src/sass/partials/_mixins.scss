@@ -1,0 +1,31 @@
+@mixin btnHoverEffect {
+    span {
+        a,i {
+            color: $mainColor;
+        }
+        a {
+            text-decoration: none;
+            font-size: 15px;
+        }
+        i {
+            margin-left: -10px;
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+        &:hover {
+            i {
+                margin-left: 10px;
+                opacity: 1;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+@mixin titleStyle {
+    h2 {
+        font-weight: 900;
+        color: $mainColor;
+        letter-spacing: 3px;
+    }
+}
